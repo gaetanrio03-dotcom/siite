@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cinéstia - Accueil</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <a href="index.html" class="logo">Cinéstia</a>
+
+    <form class="search-bar" action="toutfilms.php" method="get">
+      <input type="text" placeholder="Rechercher un film..." name="q">
+      <button type="submit">🔍</button>
+    </form>
+
+    <nav class="nav-links">
+      <a href="films.html">Films</a>
+      <a href="wishlist.html">Wishlist</a>
+      <a href="connexion.html" class="btn-connexion">Connexion</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Votre wishlist cinéma</h1>
+        <p>
+          Explorez les films à l’affiche, ajoutez-les à votre wishlist
+          et préparez vos prochaines séances comme au cinéma.
+        </p>
+        <a href="films.html" class="btn-primary">Voir tous les films</a>
+      </div>
+    </section>
+
+    <!-- CARROUSEL -->
+    <section class="carousel-section">
+      <h2>À l'affiche</h2>
+      <div class="carousel-container">
+        <button class="carousel-btn prev" id="carousel-prev">❮</button>
+        <div class="carousel" id="carousel">
+          <!-- 10 FILMS DANS LE CARROUSEL -->
+          <article class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400&h=550&fit=crop" alt="Avatar">
+            <div class="carousel-info">
+              <h3>Avatar</h3>
+              <p>Science-fiction • 2h42</p>
+              <button class="btn-wishlist" data-film-id="avatar">
+                Ajouter à ma wishlist
+              </button>
+            </div>
+          </article>
+
+          <article class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1608170825937-a9090c451bb8?w=400&h=550&fit=crop" alt="Dune">
+            <div class="carousel-info">
+              <h3>Dune</h3>
+              <p>Science-fiction • 2h35</p>
+              <button class="btn-wishlist" data-film-id="dune">
+                Ajouter à ma wishlist
+              </button>
+            </div>
+          </article>
+
+          <article class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1534759230491-8a5074ca91c8?w=400&h=550&fit=crop" alt="Oppenheimer">
+            <div class="carousel-info">
+              <h3>Oppenheimer</h3>
+              <p>Biopic / Drame • 3h00</p>
+              <button class="btn-wishlist" data-film-id="oppenheimer">
+                Ajouter à ma wishlist
+              </button>
+            </div>
+          </article>
+
+          <article class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1534759230491-8a5074ca91c8?w=400&h=550&fit=crop" alt="Inception">
+            <div class="carousel-info">
+              <h3>Inception</h3>
+              <p>Sci-Fi / Thriller • 2h28</p>
+              <button class="btn-wishlist" data-film-id="inception">
+                Ajouter à ma wishlist
+              </button>
+            </div>
+          </article>
+
+          <article class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1446776815464-5ab9a91fa5b2?w=400&h=550&fit=crop" alt="Interstellar">
+            <div class="carousel-info">
+              <h3>Interstellar</h3>
+              <p>Sci-Fi / Aventure • 2h49</p>
+              <button class="btn-wishlist" data-film-id="interstellar">
+                Ajouter à ma wishlist
+              </button>
+            </div>
+          </article>
+
+          <article class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1534759230491-8a5074ca91c8?w=400&h=550&fit=crop" alt="The Dark Knight">
+            <div class="carousel-info">
+              <h3>The Dark Knight</h3>
+              <p>Action / Super-héros • 2h32</p>
+              <button class="btn-wishlist" data-film-id="dark-knight">
+                Ajouter à ma wishlist
+              </button>
+            </div>
+          </article>
+
+          <article class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1517602302552-471fe67acf66?w=400&h=550&fit=crop" alt="Titanic">
+            <div class="carousel-info">
+              <h3>Titanic</h3>
+              <p>Drame / Romance • 3h14</p>
+              <button class="btn-wishlist" data-film-id="titanic">
+                Ajouter à ma wishlist
+              </button>
+            </div>
+          </article>
+
+          <article class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1501706363226-e9c83aaeee5f?w=400&h=550&fit=crop" alt="Jurassic Park">
+            <div class="carousel-info">
+              <h3>Jurassic Park</h3>
+              <p>Aventure / Sci-Fi • 2h07</p>
+              <button class="btn-wishlist" data-film-id="jurassic-park">
+                Ajouter à ma wishlist
+              </button>
+            </div>
+          </article>
+
+          <article class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1534759230491-8a5074ca91c8?w=400&h=550&fit=crop" alt="Star Wars VII">
+            <div class="carousel-info">
+              <h3>Star Wars : Le Réveil de la Force</h3>
+              <p>Space opera • 2h18</p>
+              <button class="btn-wishlist" data-film-id="star-wars-7">
+                Ajouter à ma wishlist
+              </button>
+            </div>
+          </article>
+
+          <article class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1501706363226-e9c83aaeee5f?w=400&h=550&fit=crop" alt="La La Land">
+            <div class="carousel-info">
+              <h3>La La Land</h3>
+              <p>Comédie musicale • 2h08</p>
+              <button class="btn-wishlist" data-film-id="la-la-land">
+                Ajouter à ma wishlist
+              </button>
+            </div>
+          </article>
+        </div>
+        <button class="carousel-btn next" id="carousel-next">❯</button>
+      </div>
+    </section>
+
+    <!-- APERÇU WISHLIST -->
+    <section class="films-section">
+      <h2>Commencez votre wishlist</h2>
+      <p class="section-subtitle">
+        Ajoutez quelques films pour commencer. Vous les retrouverez ensuite
+        dans l’onglet <strong>Wishlist</strong>.
+      </p>
+
+      <div class="films-grid">
+        <!-- Quelques cartes exemple (les 4 premières) -->
+        <article class="film-card">
+          <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400&h=550&fit=crop" alt="Avatar">
+          <div class="film-content">
+            <h3>Avatar</h3>
+            <p class="film-meta">Science-fiction • 2h42 • 2009</p>
+            <p class="film-description">
+              Sur la planète Pandora, un ancien marine paraplégique est envoyé
+              pour infiltrer le peuple Na'vi mais se retrouve déchiré entre
+              sa mission et ceux qu’il apprend à aimer.
+            </p>
+            <button class="btn-wishlist" data-film-id="avatar">
+              Ajouter à ma wishlist
+            </button>
+          </div>
+        </article>
+
+        <article class="film-card">
+          <img src="https://images.unsplash.com/photo-1608170825937-a9090c451bb8?w=400&h=550&fit=crop" alt="Dune">
+          <div class="film-content">
+            <h3>Dune</h3>
+            <p class="film-meta">Science-fiction • 2h35 • 2021</p>
+            <p class="film-description">
+              Paul Atreides découvre son destin sur la planète désertique Arrakis,
+              au cœur d’un conflit politique et mystique autour de l’Épice.
+            </p>
+            <button class="btn-wishlist" data-film-id="dune">
+              Ajouter à ma wishlist
+            </button>
+          </div>
+        </article>
+
+        <article class="film-card">
+          <img src="https://images.unsplash.com/photo-1534759230491-8a5074ca91c8?w=400&h=550&fit=crop" alt="Oppenheimer">
+          <div class="film-content">
+            <h3>Oppenheimer</h3>
+            <p class="film-meta">Biopic / Drame • 3h00 • 2023</p>
+            <p class="film-description">
+              Le portrait du physicien J. Robert Oppenheimer et de la création
+              de la première bombe atomique pendant la Seconde Guerre mondiale.
+            </p>
+            <button class="btn-wishlist" data-film-id="oppenheimer">
+              Ajouter à ma wishlist
+            </button>
+          </div>
+        </article>
+
+        <article class="film-card">
+          <img src="https://images.unsplash.com/photo-1534759230491-8a5074ca91c8?w=400&h=550&fit=crop" alt="Inception">
+          <div class="film-content">
+            <h3>Inception</h3>
+            <p class="film-meta">Sci-Fi / Thriller • 2h28 • 2010</p>
+            <p class="film-description">
+              Un voleur d’idées infiltre les rêves pour implanter une pensée
+              dans l’esprit d’un héritier puissant, au risque de s’y perdre.
+            </p>
+            <button class="btn-wishlist" data-film-id="inception">
+              Ajouter à ma wishlist
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Cinéstia - Projet wishlist cinéma</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

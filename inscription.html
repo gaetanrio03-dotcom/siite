@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cinéstia - Inscription</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <a href="index.php" class="logo">Cinéstia</a>
+
+    <form class="search-bar" action="toutfilms.php" method="get">
+      <input type="text" placeholder="Rechercher un film..." name="q">
+      <button type="submit">🔍</button>
+    </form>
+
+    <nav class="nav-links">
+      <a href="toutfilms.php">Films</a>
+      <a href="wishlist.html">Wishlist</a>
+      <a href="connexion.html" class="btn-connexion">Connexion</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="auth-section">
+      <div class="auth-card">
+        <h1 class="auth-title">Inscription</h1>
+        <p class="auth-subtitle">
+          Créez votre compte Cinéstia pour retrouver votre wishlist
+          sur tous vos appareils.
+        </p>
+
+        <form action="register.php" method="POST" class="auth-form">
+          <div class="auth-field">
+            <label for="name">Nom complet</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Votre nom"
+              required
+            >
+          </div>
+
+          <div class="auth-field">
+            <label for="email">Adresse e-mail</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="vous@example.com"
+              required
+            >
+          </div>
+
+          <div class="auth-field">
+            <label for="password-signup">Mot de passe</label>
+            <input
+              type="password"
+              id="password-signup"
+              name="password"
+              placeholder="Choisissez un mot de passe"
+              required
+            >
+          </div>
+
+          <button type="submit" class="btn-primary auth-submit">
+            Créer mon compte
+          </button>
+        </form>
+
+        <p class="auth-switch">
+          Déjà un compte ?
+          <a href="connexion.html">Se connecter</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Cinéstia - Site de cinéma (projet)</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

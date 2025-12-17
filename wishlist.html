@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cinéstia - Ma wishlist</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <a href="index.php" class="logo">Cinéstia</a>
+
+    <form class="search-bar" action="#" method="get">
+      <input type="text" placeholder="Rechercher un film..." name="q">
+      <button type="submit">🔍</button>
+    </form>
+
+    <nav class="nav-links">
+      <a href="toutfilms.php">Films</a>
+      <a href="wishlist.html">Wishlist</a>
+      <a href="connexion.html" class="btn-connexion">Connexion</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="wishlist-section">
+      <header class="wishlist-header">
+        <div>
+          <h1>Ma wishlist</h1>
+          <p>
+            Retrouvez ici tous les films que vous avez ajoutés à votre wishlist.
+          </p>
+        </div>
+        <button class="btn-secondary btn-clear-wishlist" type="button">
+          Vider la wishlist
+        </button>
+      </header>
+
+      <!-- État vide -->
+      <div class="empty-wishlist">
+        <p>Vous n'avez encore ajouté aucun film à votre wishlist.</p>
+        <a href="toutfilms.php" class="btn-primary">Découvrir des films</a>
+      </div>
+
+      <!-- Grille des films -->
+      <div class="wishlist-grid"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

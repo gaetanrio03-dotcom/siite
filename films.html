@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cinéstia - Tous les films</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <a href="index.html" class="logo">Cinéstia</a>
+
+    <form class="search-bar" action="toutfilms.php" method="get">
+      <input type="text" placeholder="Rechercher un film..." name="q">
+      <button type="submit">🔍</button>
+    </form>
+
+    <nav class="nav-links">
+      <a href="films.html">Films</a>
+      <a href="wishlist.html">Wishlist</a>
+      <a href="connexion.html" class="btn-connexion">Connexion</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="films-section">
+      <h1>Tous les films</h1>
+      <p class="section-subtitle">
+        Parcourez la sélection de Cinéstia et ajoutez vos coups de cœur
+        à votre wishlist.
+      </p>
+
+      <div class="films-grid">
+        <!-- 10 FILMS -->
+        <article class="film-card">
+          <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400&h=550&fit=crop" alt="Avatar">
+          <div class="film-content">
+            <h3>Avatar</h3>
+            <p class="film-meta">Science-fiction • 2h42 • 2009</p>
+            <p class="film-description">
+              Sur Pandora, Jake Sully est chargé de gagner la confiance des Na’vi
+              pour une entreprise humaine prête à tout pour exploiter les ressources
+              de la planète.
+            </p>
+            <button class="btn-wishlist" data-film-id="avatar">
+              Ajouter à ma wishlist
+            </button>
+          </div>
+        </article>
+
+        <article class="film-card">
+          <img src="https://images.unsplash.com/photo-1608170825937-a9090c451bb8?w=400&h=550&fit=crop" alt="Dune">
+          <div class="film-content">
+            <h3>Dune</h3>
+            <p class="film-meta">Science-fiction • 2h35 • 2021</p>
+            <p class="film-description">
+              L’héritier de la maison Atréides découvre un monde désertique
+              où se joue l’avenir de l’Empire, autour de la substance la plus
+              précieuse de l’univers : l’Épice.
+            </p>
+            <button class="btn-wishlist" data-film-id="dune">
+              Ajouter à ma wishlist
+            </button>
+          </div>
+        </article>
+
+        <article class="film-card">
+          <img src="https://images.unsplash.com/photo-1534759230491-8a5074ca91c8?w=400&h=550&fit=crop" alt="Oppenheimer">
+          <div class="film-content">
+            <h3>Oppenheimer</h3>
+            <p class="film-meta">Biopic / Drame • 3h00 • 2023</p>
+            <p class="film-description">
+              Chronique du projet Manhattan et du dilemme moral d’un scientifique
+              confronté au pouvoir destructeur de son invention.
+            </p>
+            <button class="btn-wishlist" data-film-id="oppenheimer">
+              Ajouter à ma wishlist
+            </button>
+          </div>
+        </article>
+
+        <article class="film-card">
+          <img src="https://images.unsplash.com/photo-1534759230491-8a5074ca91c8?w=400&h=550&fit=crop" alt="Inception">
+          <div class="film-content">
+            <h3>Inception</h3>
+            <p class="film-meta">Sci-Fi / Thriller • 2h28 • 2010</p>
+            <p class="film-description">
+              Dom Cobb, spécialiste du vol de secrets dans les rêves,
+              doit accomplir l’impossible : implanter une idée dans l’esprit
+              de sa cible.
+            </p>
+            <button class="btn-wishlist" data-film-id="inception">
+              Ajouter à ma wishlist
+            </button>
+          </div>
+        </article>
+
+        <article class="film-card">
+          <img src="https://images.unsplash.com/photo-1446776815464-5ab9a91fa5b2?w=400&h=550&fit=crop" alt="Interstellar">
+          <div class="film-content">
+            <h3>Interstellar</h3>
+            <p class="film-meta">Sci-Fi / Aventure • 2h49 • 2014</p>
+            <p class="film-description">
+              Une équipe d’astronautes traverse un trou de ver
+              à la recherche d’une nouvelle planète habitable pour sauver l’humanité.
+            </p>
+            <button class="btn-wishlist" data-film-id="interstellar">
+              Ajouter à ma wishlist
+            </button>
+          </div>
+        </article>
+
+        <article class="film-card">
+          <img src="https://images.unsplash.com/photo-1534759230491-8a5074ca91c8?w=400&h=550&fit=crop" alt="The Dark Knight">
+          <div class="film-content">
+            <h3>The Dark Knight</h3>
+            <p class="film-meta">Action / Super-héros • 2h32 • 2008</p>
+            <p class="film-description">
+              Batman affronte le Joker, un criminel imprévisible qui
+              plonge Gotham dans le chaos et met à l’épreuve ses propres limites.
+            </p>
+            <button class="btn-wishlist" data-film-id="dark-knight">
+              Ajouter à ma wishlist
+            </button>
+          </div>
+        </article>
+
+        <article class="film-card">
+          <img src="https://images.unsplash.com/photo-1517602302552-471fe67acf66?w=400&h=550&fit=crop" alt="Titanic">
+          <div class="film-content">
+            <h3>Titanic</h3>
+            <p class="film-meta">Drame / Romance • 3h14 • 1997</p>
+            <p class="film-description">
+              À bord du célèbre paquebot, Jack et Rose vivent une histoire
+              d’amour impossible sur fond de catastrophe annoncée.
+            </p>
+            <button class="btn-wishlist" data-film-id="titanic">
+              Ajouter à ma wishlist
+            </button>
+          </div>
+        </article>
+
+        <article class="film-card">
+          <img src="https://images.unsplash.com/photo-1501706363226-e9c83aaeee5f?w=400&h=550&fit=crop" alt="Jurassic Park">
+          <div class="film-content">
+            <h3>Jurassic Park</h3>
+            <p class="film-meta">Aventure / Sci-Fi • 2h07 • 1993</p>
+            <p class="film-description">
+              Des dinosaures clonés peuplent un parc d’attractions expérimental
+              qui ne tarde pas à échapper au contrôle de ses créateurs.
+            </p>
+            <button class="btn-wishlist" data-film-id="jurassic-park">
+              Ajouter à ma wishlist
+            </button>
+          </div>
+        </article>
+
+        <article class="film-card">
+          <img src="https://images.unsplash.com/photo-1534759230491-8a5074ca91c8?w=400&h=550&fit=crop" alt="Star Wars VII">
+          <div class="film-content">
+            <h3>Star Wars : Le Réveil de la Force</h3>
+            <p class="film-meta">Space opera • 2h18 • 2015</p>
+            <p class="film-description">
+              Des années après la chute de l’Empire, une nouvelle menace
+              émerge tandis qu’une jeune pilleuse d’épaves découvre la Force.
+            </p>
+            <button class="btn-wishlist" data-film-id="star-wars-7">
+              Ajouter à ma wishlist
+            </button>
+          </div>
+        </article>
+
+        <article class="film-card">
+          <img src="https://images.unsplash.com/photo-1501706363226-e9c83aaeee5f?w=400&h=550&fit=crop" alt="La La Land">
+          <div class="film-content">
+            <h3>La La Land</h3>
+            <p class="film-meta">Comédie musicale • 2h08 • 2016</p>
+            <p class="film-description">
+              À Los Angeles, une actrice débutante et un pianiste de jazz
+              tentent de concilier leurs rêves artistiques et leur histoire d’amour.
+            </p>
+            <button class="btn-wishlist" data-film-id="la-la-land">
+              Ajouter à ma wishlist
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Cinéstia - Tous les films</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
